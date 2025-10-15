@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 급식 🍚</title>
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f6f9fc;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0078ff;
+            color: white;
+            padding: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .meal-container {
+            background: white;
+            margin: 40px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .meal-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0078ff;
+        }
+
+        .meal-menu {
+            line-height: 1.8;
+            font-size: 1em;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>옥포고등학교 오늘의 급식 🍱</header>
+
+    <div class="meal-container">
+        <div class="meal-title">🍚 점심 메뉴</div>
+        <div class="meal-menu" id="lunch-menu">
+            로딩 중...
+        </div>
+    </div>
+
+    <footer>
+        © 2025 옥포고 급식 알리미
+    </footer>
+
+    <script>
+        // 급식 정보 불러오는 부분 (나중에 자동화 가능)
+        const lunchMenu = [
+            "잡곡밥",
+            "된장찌개",
+            "닭갈비",
+            "계란말이",
+            "깍두기",
+            "우유"
+        ];
+
+        // HTML에 표시
+        document.getElementById("lunch-menu").innerHTML = lunchMenu.join("<br>");
+    </script>
+
+</body>
+</html>
